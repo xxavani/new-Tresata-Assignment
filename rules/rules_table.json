@@ -1,0 +1,32 @@
+{
+  "version": "2026-11-03.1",
+  "jurisdiction": "India, Income-tax Act 2025 and Income-tax Rules 2026 (tax year 2026-27 onwards)",
+  "approved_by": "UNAPPROVED PROTOTYPE - a tax lead must verify every value against the treaty text before use",
+  "domestic": {
+    "royalty_fts_rate": 0.20,
+    "cess": 0.04,
+    "surcharge": { "none": 0.0, "over_1cr": 0.02, "over_10cr": 0.05 },
+    "provision": "Income-tax Act 2025 s.207(2) (erstwhile s.115A of the 1961 Act); lower of treaty or domestic rate under s.159(4) (erstwhile s.90(2))",
+    "source": "https://beaconfiling.com/blog/dtaa-withholding-tax-rate-finder-by-country"
+  },
+  "assumptions": [
+    "Treaty rates are applied as flat rates with no surcharge or cess added. This is common practice but must be confirmed by the certifying CA.",
+    "Equipment-royalty sub-rates (10% under the US and UK treaties) are not modelled.",
+    "Most-favoured-nation rate cuts are applied only once recorded here from a government notification (Supreme Court, AO v. Nestle SA, 2023)."
+  ],
+  "forms": {
+    "part_c_threshold_inr": 500000,
+    "source": "https://ebizfiling.com/?p=27159",
+    "renumbering_source": "https://eximpe.com/blog/payments/form-15ca-15cb-form-145-146"
+  },
+  "treaties": {
+    "US": { "name": "India-USA", "royalty": 0.15, "fts": 0.15, "make_available": true,
+            "source": "https://beaconfiling.com/blog/dtaa-withholding-tax-rate-finder-by-country", "last_verified": "2026-11-03" },
+    "UK": { "name": "India-UK", "royalty": 0.15, "fts": 0.15, "make_available": true,
+            "source": "https://beaconfiling.com/blog/dtaa-withholding-tax-rate-finder-by-country", "last_verified": "2026-11-03" },
+    "SG": { "name": "India-Singapore", "royalty": 0.10, "fts": 0.10, "make_available": true,
+            "source": "https://beaconfiling.com/blog/dtaa-withholding-tax-rate-finder-by-country", "last_verified": "2026-11-03" },
+    "DE": { "name": "India-Germany", "royalty": 0.10, "fts": 0.10, "make_available": false,
+            "source": "https://beaconfiling.com/dtaa/fts-tax-rate-india-germany", "last_verified": "2026-11-03" }
+  }
+}

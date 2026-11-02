@@ -1,0 +1,290 @@
+[
+  {
+    "id": "C01",
+    "title": "US hosted CRM subscription, no services",
+    "document_text": "Order Form. Vendor grants Customer a non-exclusive, non-transferable right to access the Service during the Subscription Term. The Service is accessed solely through Vendor's hosted platform; no software is delivered or installed. Fees: INR 12,00,000 per year.",
+    "vendor": {"country": "US", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 1200000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [true, true, true], "quote": "The Service is accessed solely through Vendor's hosted platform"},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "standard review", "total_tax_inr": 0, "why": "Use-only access, treaty documents on file: business profits, no withholding."}
+  },
+  {
+    "id": "C02",
+    "title": "German on-premise licence plus priced implementation and training",
+    "document_text": "Licence Agreement. Licensor grants Licensee a perpetual licence to install and use the Software for its internal business purposes only. Licensee shall not copy, modify or distribute the Software. Schedule 2 (Professional Services): Licensor will configure the Software and train Licensee's engineers to administer it independently. Licence fee INR 10,00,000; Professional Services fee INR 4,00,000.",
+    "vendor": {"country": "DE", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 1400000, "services_amount_inr": 400000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": "Licensee shall not copy, modify or distribute the Software"},
+      "Q2": {"samples": [false, false, false], "quote": "perpetual licence to install and use the Software"},
+      "Q3": {"samples": [true, true, true], "quote": "Licensor will configure the Software and train Licensee's engineers"},
+      "Q4": {"samples": [true, true, true], "quote": "Professional Services fee INR 4,00,000"},
+      "Q5": {"samples": [true, true, true], "quote": "train Licensee's engineers to administer it independently"},
+      "Q6": {"samples": [true, true, true], "quote": "Licensor will configure the Software and train Licensee's engineers"},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "standard review", "total_tax_inr": 40000, "why": "Licence is use-only; services are FTS under a treaty with no make-available test: 10% of 4,00,000."}
+  },
+  {
+    "id": "C03",
+    "title": "US SaaS plus priced admin training",
+    "document_text": "Master Order. Customer receives access to the hosted analytics platform for twelve months. Training Services: Vendor will deliver a five-day course so that Customer's staff can build and maintain dashboards without Vendor assistance. Subscription INR 9,00,000; Training Services INR 3,00,000.",
+    "vendor": {"country": "US", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 1200000, "services_amount_inr": 300000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [true, true, true], "quote": "access to the hosted analytics platform"},
+      "Q3": {"samples": [true, true, true], "quote": "Vendor will deliver a five-day course"},
+      "Q4": {"samples": [true, true, true], "quote": "Training Services INR 3,00,000"},
+      "Q5": {"samples": [true, true, true], "quote": "build and maintain dashboards without Vendor assistance"},
+      "Q6": {"samples": [true, true, true], "quote": "Vendor will deliver a five-day course"},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "specialist required", "total_tax_inr": 45000, "why": "Make-available judgement under the US treaty; tentative FTS at 15% of 3,00,000."}
+  },
+  {
+    "id": "C04",
+    "title": "Singapore perpetual use-only licence",
+    "document_text": "End User Licence. Licensor grants Licensee a non-exclusive licence to use one copy of the Software. All intellectual property remains with Licensor and no right to reproduce, adapt or sublicense is granted. Fee INR 20,00,000.",
+    "vendor": {"country": "SG", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 2000000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": "no right to reproduce, adapt or sublicense is granted"},
+      "Q2": {"samples": [false, false, false], "quote": "licence to use one copy of the Software"},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "standard review", "total_tax_inr": 0, "why": "Copyrighted article, not copyright: business profits."}
+  },
+  {
+    "id": "C05",
+    "title": "UK SDK licence with redistribution rights",
+    "document_text": "SDK Agreement. Licensor grants Developer the right to modify the SDK and to distribute it, in object code form, embedded in Developer's own products sold to third parties. Fee INR 15,00,000.",
+    "vendor": {"country": "UK", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 1500000},
+    "llm_answers": {
+      "Q1": {"samples": [true, true, true], "quote": "the right to modify the SDK and to distribute it"},
+      "Q2": {"samples": [false, false, false], "quote": null},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "specialist required", "total_tax_inr": 225000, "why": "Rights in the copyright itself: royalty at 15%."}
+  },
+  {
+    "id": "C06",
+    "title": "US SaaS, vendor has not provided a TRC",
+    "document_text": "Subscription Terms. Customer may access and use the hosted Service for its internal purposes. No copy of any software is provided. Fees INR 8,00,000.",
+    "vendor": {"country": "US", "trc_on_file": false, "form41_on_file": true, "beneficial_owner": true, "surcharge_band": "none"},
+    "invoice": {"amount_inr": 800000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [true, true, true], "quote": "No copy of any software is provided"},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "analyst required", "total_tax_inr": 166400, "why": "No TRC: treaty relief unavailable, domestic 20% plus 4% cess = 20.8%."}
+  },
+  {
+    "id": "C07",
+    "title": "German licence with support bundled, no price split",
+    "document_text": "Licence and Support Agreement. Licensor grants a licence to use the Software internally. The annual fee of INR 11,00,000 covers the licence, updates and on-call engineering support.",
+    "vendor": {"country": "DE", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 1100000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [false, false, false], "quote": "a licence to use the Software internally"},
+      "Q3": {"samples": [true, true, true], "quote": "on-call engineering support"},
+      "Q4": {"samples": [false, false, false], "quote": "The annual fee of INR 11,00,000 covers the licence, updates and on-call engineering support"},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [true, true, true], "quote": "on-call engineering support"},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "specialist required", "total_tax_inr": null, "why": "Bundled consideration must be split by a human before any rate applies."}
+  },
+  {
+    "id": "C08",
+    "title": "US implementation partner with consultants on site",
+    "document_text": "Statement of Work. Vendor will station two consultants at Customer's Bengaluru office for four months to implement the platform. Fees INR 25,00,000.",
+    "vendor": {"country": "US", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 2500000, "services_amount_inr": 2500000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [false, false, false], "quote": null},
+      "Q3": {"samples": [true, true, true], "quote": "to implement the platform"},
+      "Q4": {"samples": [true, true, true], "quote": "Fees INR 25,00,000"},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [true, true, true], "quote": "to implement the platform"},
+      "Q7": {"samples": [true, true, true], "quote": "station two consultants at Customer's Bengaluru office for four months"},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "specialist required", "total_tax_inr": null, "why": "Possible service PE: needs a specialist before any treaty article is applied."}
+  },
+  {
+    "id": "C09",
+    "title": "Singapore SaaS where the model invents a sublicensing clause",
+    "document_text": "Terms of Service. Customer may use the hosted Service for its own internal operations. Customer may not resell or sublicense access. Fees INR 6,00,000.",
+    "vendor": {"country": "SG", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 600000},
+    "llm_answers": {
+      "Q1": {"samples": [true, true, true], "quote": "Customer may sublicense the Software to its affiliates"},
+      "Q2": {"samples": [true, true, true], "quote": "use the hosted Service for its own internal operations"},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "analyst required", "total_tax_inr": null, "why": "Fabricated quote is caught by the quote check; Q1 is left unresolved."}
+  },
+  {
+    "id": "C10",
+    "title": "Irish vendor, treaty not in the rules table",
+    "document_text": "Subscription Agreement. Customer may access the hosted Service. Fees INR 6,00,000.",
+    "vendor": {"country": "IE", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 600000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [true, true, true], "quote": "Customer may access the hosted Service"},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "specialist required", "total_tax_inr": null, "why": "The system refuses to guess a treaty it has no rules for."}
+  },
+  {
+    "id": "C11",
+    "title": "German consulting where the payer bears the tax",
+    "document_text": "Consulting Agreement. Consultant will advise Client on its data-platform architecture. All fees are payable net of any Indian taxes, which Client shall bear. Fees INR 9,00,000.",
+    "vendor": {"country": "DE", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 900000, "services_amount_inr": 900000, "payer_bears_tax": true},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [false, false, false], "quote": null},
+      "Q3": {"samples": [true, true, true], "quote": "Consultant will advise Client on its data-platform architecture"},
+      "Q4": {"samples": [true, true, true], "quote": "Fees INR 9,00,000"},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [true, true, true], "quote": "Consultant will advise Client on its data-platform architecture"},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "standard review", "total_tax_inr": 100000, "why": "FTS at 10%, grossed up: 9,00,000 x 0.10 / 0.90."}
+  },
+  {
+    "id": "C12",
+    "title": "US order form relying on an unseen master agreement",
+    "document_text": "Order Form No. 7. Licence scope, usage rights and restrictions are as set out in the Master Subscription Agreement. Fees INR 7,00,000.",
+    "vendor": {"country": "US", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 700000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [false, false, false], "quote": null},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [true, true, true], "quote": "as set out in the Master Subscription Agreement"}
+    },
+    "expected": {"route": "analyst required", "total_tax_inr": null, "why": "The deciding clause is in a document nobody uploaded."}
+  },
+  {
+    "id": "C13",
+    "title": "US SaaS where the samples disagree on delivery",
+    "document_text": "Subscription. Customer may use the cloud Service and may download a desktop connector for convenience. Fees INR 10,00,000.",
+    "vendor": {"country": "US", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 1000000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [true, false, true], "quote": "may download a desktop connector"},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "analyst required", "total_tax_inr": 0, "why": "Disagreement is surfaced to a human, though it does not change the category here."}
+  },
+  {
+    "id": "C14",
+    "title": "Singapore training sessions below the Form 146 threshold",
+    "document_text": "Services Order. Vendor will run two workshops teaching Customer's analysts to build forecasting models on their own. Fees INR 3,00,000.",
+    "vendor": {"country": "SG", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 300000, "services_amount_inr": 300000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [false, false, false], "quote": null},
+      "Q3": {"samples": [true, true, true], "quote": "Vendor will run two workshops"},
+      "Q4": {"samples": [true, true, true], "quote": "Fees INR 3,00,000"},
+      "Q5": {"samples": [true, true, true], "quote": "teaching Customer's analysts to build forecasting models on their own"},
+      "Q6": {"samples": [true, true, true], "quote": "Vendor will run two workshops"},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "specialist required", "total_tax_inr": 30000, "form": "Form 145 Part A", "why": "Make-available case (specialist); tentative 10%; aggregate under 5 lakh so Part A, no CA certificate."}
+  },
+  {
+    "id": "C15",
+    "title": "DESIGNED FAILURE: US model API plus a licensed training dataset",
+    "document_text": "API and Data Agreement. Customer may call the hosted model through the API. Provider also licenses the Benchmark Dataset to Customer, which Customer may download and use to train its own internal models. Fees INR 18,00,000.",
+    "vendor": {"country": "US", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 1800000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [true, true, true], "quote": "Customer may call the hosted model through the API"},
+      "Q3": {"samples": [false, false, false], "quote": null},
+      "Q4": {"samples": [false, false, false], "quote": null},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "specialist required", "total_tax_inr": null, "why": "A dataset licence raises a royalty question the checklist never asks. Expected to FAIL: shows the weakest point."}
+  },
+  {
+    "id": "C16",
+    "title": "DESIGNED FAILURE: Singapore SaaS with routine email support bundled",
+    "document_text": "Subscription. Customer may access the hosted Service. Standard email support during business hours is included in the fee. Fees INR 7,00,000.",
+    "vendor": {"country": "SG", "trc_on_file": true, "form41_on_file": true, "beneficial_owner": true},
+    "invoice": {"amount_inr": 700000},
+    "llm_answers": {
+      "Q1": {"samples": [false, false, false], "quote": null},
+      "Q2": {"samples": [true, true, true], "quote": "Customer may access the hosted Service"},
+      "Q3": {"samples": [true, true, true], "quote": "Standard email support during business hours is included in the fee"},
+      "Q4": {"samples": [false, false, false], "quote": "is included in the fee"},
+      "Q5": {"samples": [false, false, false], "quote": null},
+      "Q6": {"samples": [false, false, false], "quote": null},
+      "Q7": {"samples": [false, false, false], "quote": null},
+      "Q8": {"samples": [false, false, false], "quote": null}
+    },
+    "expected": {"route": "standard review", "total_tax_inr": 0, "why": "Routine support is incidental to the subscription. Expected to FAIL: the bundling rule over-escalates."}
+  }
+]
